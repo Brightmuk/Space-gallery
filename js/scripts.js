@@ -1,26 +1,29 @@
-var asteroid = $('.one');
+//show loader on page load
+setTimeout(function(){
+    var cookie=document.cookie;
+    if(navigator.cookieEnabled&&cookie.charAt(9)=='t'){
+        $('.hero').toggleClass('hero-discover');
+        $('.discover-content').css('display','block');
+        setTimeout(function(){
+            $('.hero').toggleClass('hero-discover-height');
+            document.cookie = "discover=true"
+          },400); 
+    }
+        $('.loader-bg').fadeToggle();
+  },1500);
 
-$(document).ready(function(){
-    typeWriter()
-    $("button").click(function(){
-        asteroid.animate({
-            left: '250px'
-        });
-        console.log(asteroid.position());
-    })
+//discover button
+$('.discover').click(function(){
+    $('.hero').toggleClass('hero-discover');
+    $('.discover-content').css('display','block');
+    setTimeout(function(){
+        $('.hero').toggleClass('hero-discover-height');
+        document.cookie = "discover=true"
+      },400);  
+
 })
 
-//type the intro
-var i = 0;
-var txt = 'Are you a designer and you would like your work to be seen?';
-var speed = 60;
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("intro").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
+
 
 //get the current year for copyright mark
 var date = new Date();
