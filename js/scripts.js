@@ -34,6 +34,10 @@ $('.back-home').click(function(){
 
 })
 
+//selected category
+$('.category').click(function(){
+    console.log($('.category').attr('value'))
+})
 
 //get the current year for copyright mark
 var date = new Date();
