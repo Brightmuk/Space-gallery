@@ -3,20 +3,17 @@ import './Home.css'
 
 const imagesPath = `${process.env.PUBLIC_URL}/images/`;
 
+
 const Home = () => {
     return ( 
         <div className="hero">
       
-        <div className="navbar">
-            <div className="logo">E<span className="b">D</span><span className="d">S</span></div>
-            <button type="button" className="sign-up">Sign up</button>
-        </div>
       
         <div className="home">
             
                 <p className="bright-design">A Bright Designs production</p>
-                <h1>Epic Designers<br/> Society</h1>
-                <p>Discover merchadise made by the best designers</p>
+                <h1>Epic Space<br/> Gallery</h1>
+                <p>Explore space from where you are</p>
                 <br/>
                 <button type="button" className="discover">Discover <span className="fas fa-angle-right"></span></button>
     
@@ -48,9 +45,7 @@ const Home = () => {
             <img src={imagesPath+"asteroid4.png"} className="eight"/>
         </div>
        
-        <div className="footer">
-            <small>&#169; Bright Designs | <span id="year"></span></small>
-        </div>
+
         </div>
      );
 }

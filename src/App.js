@@ -2,15 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Explore from './components/Explore';
+import Footer from './components/Footer';
 
 const App = ()=> {
   return (
-    <div className="App">
-      <div className="hero">
-      {/* <Navbar/> */}
+    <div className="app">
+     
+      <Navbar/>
       <Home/>
-      </div>
-
+      <Explore/>
+      <Footer/>
     </div>
   );
 }

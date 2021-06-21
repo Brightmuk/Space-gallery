@@ -1,7 +1,9 @@
 .navbar{
-    width:85%;
+    position:absolute;
+    z-index:1;
+    width:90%;
+    padding-left:20px ;
     height:15%;
-    margin:auto;
     display: flex;
     align-items: center;
     justify-content: space-between;

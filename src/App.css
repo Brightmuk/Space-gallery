@@ -1,0 +1,10 @@
+
+.app{
+  background-image: linear-gradient(0deg, rgba(17, 17, 17, 0.3), rgba(37, 37, 37, 0.3)), url(moon.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed;
+
+}
