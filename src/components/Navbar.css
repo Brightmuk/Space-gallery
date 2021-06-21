@@ -1,0 +1,57 @@
+.navbar{
+    width:85%;
+    height:15%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color:white;
+    font-weight: 700;
+    font-size: 40px;
+    cursor: pointer;
+}
+.logo .b{
+    color:rgb(1, 228, 228)
+}
+button{
+    color:#fbfcfd;
+    padding:12px 25px;
+    background: transparent;
+    border:1px solid rgb(112, 112, 112);
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+.nav-side-bar{
+    width: 70px;
+    height: 100vh;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.nav-side-bar-content a{
+    list-style: none;
+    color:rgba(97, 97, 97, 0.5);
+    font-size: 30px;
+    margin:40px 20px
+}
+.links-side-bar{
+    width: 70px;
+    height: 100vh;
+    position: absolute;
+    right:0;
+    top:75%;
+    bottom:0;
+}
+.menu{
+    display:block;
+    width:25px;
+    margin:40px auto 0;
+    cursor: pointer;
+}
