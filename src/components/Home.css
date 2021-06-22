@@ -1,6 +1,5 @@
 .hero{
     height: 100vh;
-  
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -178,45 +177,5 @@ h1{
     }
 }
 
-@media (max-width: 800px) {
 
-    .items-title{
-        display:block
-    }
-}
-@media (max-width: 900px) {
-    .navbar{
-       width:80%
-    }
-}
-@media (max-width: 600px) {
-    .navbar{
-       width:70%
-    }
-    h1{
-        font-size: 70px;
-    }
-}
-@media (max-width: 400px) {
-    .navbar{
-        margin-left: 60px;
-       width:75%;
-       height: 13%;
-    }
-    .discover{
-        background-color: rgba(0,0,0,0.5);
-    }
-    .logo{
-        font-size: 35px;
-    }
-    h1{
-        font-size: 50px;
-        line-height: normal;
-    }
-    .menu{
-        margin:30px auto 0;
-    }
-    .about #intro{
-        font-size: 20px;
-    }
-}
+

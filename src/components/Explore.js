@@ -12,7 +12,7 @@ const Explore = () => {
         <div className="section">
              <div className="section-title">Astronomy pic of the day</div>
             {isPending?
-            <div clasName="loader">Loading...</div>:
+            <div className="loader">Loading...</div>:
            
         <div  className="pic-of-day">
             
@@ -25,7 +25,7 @@ const Explore = () => {
             <div className="info">
                 <div className="title">{imageData.title}</div>
                 <br/>
-                <div className="description">{imageData.explanation.substring(0,600)}...<span onClick={console.log('More')} class="more">more</span></div>
+                <div className="description">{imageData.explanation.substring(0,600)}...<span onClick={console.log('More')} className="more">more</span></div>
             </div>
             
         </div>
