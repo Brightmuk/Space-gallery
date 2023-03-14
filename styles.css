@@ -6,6 +6,7 @@ font-family: sans-serif;
 }
 body{
     background-color: rgb(24, 24, 24);
+    cursor: url('images/space-ship.png'),url('images/asteroid1.png'),auto;
 }
 /* preloader styling */
 .loader-bg{
@@ -119,6 +120,9 @@ button{
     outline: none;
     cursor: pointer;
     transition: 0.3s;
+}
+button .fa{
+    font-size: 16px;
 }
 button:hover{
     background-color: rgba(0,0,0,0.5);
@@ -259,151 +263,7 @@ h1{
     padding:10px;
 }
 
-.discover-section{
-    display:none;
-}
 
-.discover-nav{
-    width:100%;
-    height:8%;
-    position:fixed;
-    background-color: rgba(24, 24, 24,0.9);
-    box-shadow: 0 1px 2px 0 rgba(151, 151, 151, 0.2), 0 6px 20px 0 rgba(184, 184, 184, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.discover-nav .back-home{
-    font-size: 35px;
-    color:rgb(255, 255, 255);
-    margin:10px;
-}
-.discover-nav .categories{
-    display:flex;
-    justify-content: space-between;
-    width: 50%;
-    color:rgb(128, 128, 128)
-}
-.discover-nav .category{
-    margin-left:5%;
-    font-size: 20px;
-    color:rgb(197, 197, 197);
-    font-weight: 100;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.discover-nav .category:hover{
-    color: white;
-    text-shadow: 1px 1px 5px rgb(255, 255, 255);
-}
-.active-category{
-    border-bottom: 1px solid rgb(165, 165, 165);
-    animation: slide-in all ease 0.5s;
-
-}
-
-@keyframes slide-in{
-    from{
-        border-bottom: 0;
-    }
-    to{
-        border-bottom: 1px;
-    }
-}
-
-.discover-nav .logo{
-    color:rgba(255, 255, 255);
-    margin-left:5px;
-    width:25%;
-    font-weight: 700;
-    font-size: 40px;
-    cursor: pointer;
-}
-.discover-nav .sign-up{
-    padding:10px 22px;
-    color: rgb(172, 172, 172);
-}
-.discover-nav .menu-btn{
-  display: none;
-}
-
-.discover-nav .sign-up:hover{
-    color: rgb(255, 255, 255);
-}
-.discover-content{
-    padding-top:10%;
-    background-color: rgb(24, 24, 24);
-    height: 100vh;
-    width:100%;
-}
-.discover-content .items{
-    display:flex;
-    justify-content: center;
-    width:100%;
-    flex-wrap: wrap;
-}
-.discover-content .items .item {
-    padding:1%;
-    width: calc(33% - 20px);
-    min-width:250px;
-    background-color: rgb(31, 31, 31);
-    width:20%;
-    cursor: pointer;
-    margin: 10px;
-   
-}
-.discover-content .items .item img{
-    width: 100%;
-}
-.items-title{
-    display:none;
-    color:white;
-    padding:10px;
-    text-align: center;
-}
-.items .item .item-content {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    color:rgb(126, 126, 126);
-    font-size: 14px;
-    font-weight: 100;
-    padding-top:10px;
-    padding-bottom:10px;
-}
-.items .item .item-content p{
-    padding-top:10px;
-}
-.items .item .item-content .avatar{
-    width:50px;
-    border-radius: 50%;
-}
-.items .item .item-footer {
-    text-align: center;
-    color:rgb(126, 126, 126);
-    font-size: 14px;
-    font-weight: 100;
-    padding-top:10px;
-    border-top:1px solid rgb(48, 48, 48);
-}
-
-/* responsive styling */
-@media (max-width: 800px) {
-    .discover-nav .category,.discover-nav .sign-up{
-      display: none;
-    }
-    .discover-nav .menu-btn{
-        display: block;
-        width:25px;
-        margin-right:10px
-    }
-    .discover-content{
-        padding-top: 15%;
-    }
-    .items-title{
-        display:block
-    }
-}
 @media (max-width: 900px) {
     .navbar{
        width:80%
@@ -422,9 +282,6 @@ h1{
         margin-left: 60px;
        width:75%;
        height: 13%;
-    }
-    .discover{
-        background-color: rgba(0,0,0,0.5);
     }
     .logo{
         font-size: 35px;

@@ -10,34 +10,22 @@ setTimeout(function(){
           },400); 
     }
         $('.loader-bg').fadeToggle();
+
+
+
   },1500);
+ 
+//play audio
+var audio = document.createElement('audio');
+audio.setAttribute('src', 'audio/space.mp3');
 
-//discover button
-$('.discover').click(function(){
-    $('.hero').toggleClass('hero-discover');
-    $('.discover-section').css('display','block');
-    setTimeout(function(){
-        $('.hero').toggleClass('hero-discover-height');
-        document.cookie = "discover=true"
-      },400);  
-
-})
-
-//back home button
-$('.back-home').click(function(){
-    $('.hero').toggleClass('hero-discover-height');
-    setTimeout(function(){
-        $('.discover-section').css('display','none');
-        $('.hero').toggleClass('hero-discover');
-        document.cookie = "discover=false"
-      },400);  
-
-})
-
-//selected category
-$('.category').click(function(){
-    console.log($('.category').attr('value'))
-})
+window.onload=function(){
+    audio.play()
+}
+audio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
 
 //get the current year for copyright mark
 var date = new Date();
